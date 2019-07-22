@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>OpenShift - Concept</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/cetic.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="homepage" data-background-image="img/background.png" data-background-size="contain">
+					<h1>OpenShift Concept<h1/>
+					<h3>Zeldi Suryady - Software and Systems Technologies - TM RnD</h3>
+					<i> <small> zeldi.suryady@gmail.com </small> </i>
+				</section>
+				<section  data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					<h1>TOC</h1>
+					<ul>
+						<li>Openshift Component</li>
+						<li>Role Based Access</a></li>
+					</ul>
+				</section>
+
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					### Users Category in Openshift
+
+					* <p>Regular User </p>
+					* <p>System User </p>
+					* <p>Service Account:  non human user</p>
+
+					![gitlab-ci.png](img/openshift-user-category.png)
+					
+					<!-- # Role Based Access in Openshift 
+						
+						<h2>User </h2>
+
+						* **_Releasing software_** is usually a **_time-consuming & cumbersome_** process for developers. 
+						
+						* **OpenShift** enables faster development and release life cycles.
+						
+						* Paired with the **GitLab Continuous Integration and Continuous Delivery (CI/CD) tool** can help developers be more productive by improving software release cycles. -->
+				</section>
+
+				<section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+							#### Cloud Computing - Service models
+							<img class="plain" data-src="img/cloud-services-models.png" />
+							
+<b>OpenShift</b>: Platform as a Service (PaaS) offering from Red Hat for container-based software deployment and management. 
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">								
+								OpenShift brings together [Docker](https://www.docker.com/) and [Kubernetes](https://kubernetes.io/), and provides an API to manage these services.
+								
+								<img class="plain" data-src="img/docker.png" />
+								<img class="plain" data-src="img/kubernetes.png" />
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">								
+								#### Docker: 
+								
+								<img class="plain" data-src="img/docker.png" />
+								
+								* It helps you to develop, deploy, and manage <b>container</b>-based applications. 
+								* Containers are standalone processes that run within their own environment, independent of operating system and the underlying infrastructure. 
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								#### Kubernetes
+								<img class="plain" data-src="img/kubernetes.png" />
+								* An open-source system for 
+									* automating deployment,
+									* scaling,
+									* management of containerized applications.
+								* Kubernetes works with a range of container tools, including Docker.
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								#### DevOps tools
+								<img class="plain" data-src="img/s2i2.png" />
+								
+								* OpenShift contains DevOps tools for <b> accelerated </b> application development.
+								* Easily turn source code into running applications with <b> source-to-image </b> capabilities.
+							</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							#### OpenShift
+							<img class="plain" data-src="img/openshiftarchi.png" />
+						</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+								<script type="text/template">
+									#### Deployment Strategies
+									* Principal strategy: Source-to-Image (S2I)
+									
+										* Official Images.
+										* Also possible to use customizing Images.
+										
+									<img class="plain" data-src="img/langage1.png" /> <img class="plain" data-src="img/langage2.png" /> <img class="plain" data-src="img/langage3.png" /> <img class="plain" data-src="img/langage4.png" /> <img class="plain" data-src="img/langage5.png" /> <img class="plain" data-src="img/langage6.png" /> 
+								</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+								<script type="text/template">
+									#### S2I: Automated Build Process
+
+									<img class="plain" data-src="img/s2i.png" />
+									
+									<small> S2I produces ready-to-run images by injecting source code into a container and letting the container prepare that source code for execution. </small>
+									
+									<!-- <small> 
+									
+									1. Starts a container from the builder image.
+									2. Downloads the application source.
+									3. Streams the scripts and application sources into the builder image container.
+									4. Runs the assemble script (from the builder image).
+									5. Saves the final image. 
+									
+									</small> -->
+									
+								</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+								<script type="text/template">
+									#### Other Deployment Strategies
+									* Docker Strategy
+										* Dockerfile
+									* Kubernetes files
+										* Deployment 
+										* Service
+								</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+								### Gitlab CI
+								
+								<!-- * GitLab offers a continuous integration (CI) service ~ Gitlab CI. (Jenkins / Travis equivalent) -->
+								<!-- * Its goal in the development timelive is to reduce the time needed for developers to see if something went wrong.  -->
+								<img class="plain" data-src="img/gitlab-pipeline.png" />
+								<!-- * Most projects use this service to run the test suite so that developers get immediate feedback if they broke something. -->
+						</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+								### .gitlab-ci.yml file
+								* By adding a .gitlab-ci.yml file to the root directory of your repository and configuring your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline.
+								
+								* By default it runs a pipeline with three stages: <b> build</b>, <b> test</b>, and <b> deploy</b>.
+
+								<!-- * The .gitlab-ci.yml file tells the GitLab runner what to do. -->
+								
+								<!-- * If everything runs OK, you'll get a nice green checkmark associated with the commit. This makes it easy to see whether a commit caused any of the tests to fail before you even look at the code. -->
+
+								<!-- * There's a growing trend to use continuous delivery and continuous deployment to automatically deploy tested code to staging and production environments. -->
+
+								<!-- * Gitlab CI is going to be a center-piece for Continuous Integration (~as a Jenkins can do), it has become a popular framework for building Continuous Delivery pipelines that not only builds and tests the code changes but also pushes the change through various steps. -->
+						</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+								### Gitlab Runner
+																
+								* A runner is basically a server that <b>executes</b> instructions listed in the .gitlab-ci.yml file, and reports the result back to GitLab itself. 
+								
+								* Two gitlab <b>shared</b> runners are setup for the Gitlab@CETIC
+									* shell strategy
+									* docker stategy (This one is running on OpenShift)
+								<!-- mentionner indépendance l'un peut aller sans l'autre -->
+						</script>
+					</section>
+						<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+								### Gitlab Runner
+								<img class="plain" data-src="img/shared-runner.png" />
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								####  Setup a CI/CD process by combining OpenShift and Gitlab CI
+								<img class="plain" data-src="img/openshift1.png" />
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								####  Setup a CI/CD process by combining OpenShift and Gitlab CI
+								<img class="plain" data-src="img/openshift2.png" />
+							</script>
+					</section>
+					<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								####  Setup a CI/CD process by combining OpenShift and Gitlab CI
+								<img class="plain" data-src="img/openshift3.png" />
+							</script>
+					</section>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							#### Apps already running on OpenShift@CETIC
+							
+							|Apps|| URL |
+							| :--: || :--: | 
+							|Gitlab Runner|| |
+							|Oscar-SaaS|| http://api-oscar-saas.openshift.ext.cetic.be |
+							|LimeSurvey|| http://security-audit.openshift.ext.cetic.be |
+							|TSimulus microservice|| public url: http://tsimulus.openshift.cetic.be |
+							|Monitoring of the CETIC's building||https://prom-naboo.openshift.ext.cetic.be |
+							|Slides presented today||http://demo-slides.openshift.ext.cetic.be |
+							|Jenkins|| |
+							
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							### Quick Tour
+							|![openshift-oscar-saas2.png](img/openshift-oscar-saas.png)|![gitlab-ci.png](img/gitlab-ci.png)|
+							| :--: | :--: | 
+							| *OpenShift Interface* | *Gitlab CI* |
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							###  Demo of the CI/CD process in action
+							
+							<!---
+							<iframe src="https://giphy.com/embed/KpACNEh8jXK2Q" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+							Make that monkey happy by giving him OpenShift!
+							-->
+							
+							<iframe src="https://giphy.com/embed/T8Dhl1KPyzRqU" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+							Our monkey is now a professional developer!	
+							
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+							<script type="text/template">
+								### Benefits of using OpenShift
+								
+								* <p class="fragment">Speed, creating an environment in minutes, **ready to deploy**. </p>
+								
+								* <p class="fragment">Git integration.</p>
+								* <p class="fragment">Works really well when running Standalone Docker and microservice-based apps. </p>	
+								* <p class="fragment">**DevOps** process: application builds, deployments, scaling and health management. </p>
+								* <p class="fragment">Contrary to Docker and Kubernetes, Openshift is **secure** by default which requires developers to use secure Docker containers. </small> </p>
+								* <p class="fragment">**Elasticity**: Infrastructure + Applications.</p>
+								<!--	* <p class="fragment"> OpenShift Infrastructure can be extended, downsized, or migrated as needed. </p>
+									* <p class="fragment"> Servers can be added or removed on the fly, the data is rebalanced through the cluster, remains available and there is no interruption of applications. </p> -->
+								* <p class="fragment">** High Availability **: Auto-Create and Auto-Scaling Tools.</p>
+								* <p class="fragment">**Opensource**: big community, 4,455*, ... </p>
+							</script>
+				</section>	
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							### Limitations of using OpenShift
+
+							<!-- * <p class="fragment"> For more complex applications with dependences between containerized applications, some knowledge of Kubernetes is required. </p> -->
+							* <p class="fragment"> The "docker-compose up" command from Docker is not working with OpenShift, it needs to translate the docker-compose file into Kubernetes files. </p>
+								
+								* <p class="fragment"> [Kompose](http://kompose.io/) can do the job, but this framework is not yet full stable. </p>
+							
+							* <p class="fragment"> Not adapted to work with monolithic applications demanding a lot of computing resources. </p>
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+							* <i>  When should I use OpenShift instead of asking for a VM? </i>
+								* If you want to try a PaaS with containers.
+								* If you have a microservice application to deploy.
+
+							* <i> When should I not use OpenShift? </i>
+								* When your application is heavy in terms of cpu/storage/memory: currently the OpenShift cluster is not very big and is intented for testing purposes.
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+						<script type="text/template">
+						### Your turn!
+						
+						##### Prerequisites
+						* You must be able to access to the running instance of OpenShift Origin (https://openshift.ext.cetic.be:8443). The login and password used for OpenShift are your LDAP credentials. (same as your Office 365 account)
+						* You must have the OpenShift Origin CLI downloaded and installed (https://www.openshift.org/download.html), if you want to use OpenShift in command line.
+						</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					<script type="text/template">
+						### Future Improvements
+						* Provide a documentation.
+						* Use OpenShift in research projects and missions.
+						* Add more phases in the CI process (sonar, CAST, scalability and security tests ...).
+						* Monitor OpenShift resources (with Prometheus and Grafana).
+						* Blog article.
+						* ...
+					</script>
+				</section>
+				<section data-markdown data-background-image="img/logo-cetic.png" data-background-position="98% 2%" data-background-size="10%">
+					<script type="text/template">
+						### References:
+						* [Automatic build and deploy with Openshift with Gitlab](http://www.admin-magazine.com/Archive/2018/47/Automatic-build-and-deploy-with-OpenShift-and-GitLab-CI)
+						* [Openshift](https://www.openshift.org/)
+						* [Kubernetes](https://kubernetes.io/)
+						* [Beginner guide to CI in Gitlab](https://about.gitlab.com/2018/01/22/a-beginners-guide-to-continuous-integration/)
+						* https://blog.openshift.com/openshift-cloudbees-jenkins-enterprise-devops/
+						* https://blog.openshift.com/cicd-with-openshift/
+						* https://developers.redhat.com/blog/2016/09/22/development-workflows-with-fuse-integration-services-fis/
+						
+					</script>
+				</section>
+				<section class="lastpage" data-background-image="img/background-lastpage.png">
+					<table>
+						<tr>
+							<td style="width: 50%; text-align: center;">
+								<a href="https://www.cetic.be" /><img class="plain" data-src="img/logo-cetic.png" /></a><br /><br />
+								<small>Aéropole de Charleroi-Gosselies <br />
+								Avenue Jean Mermoz 28 <br />
+								B-6041 Charleroi - Belgique <br /></small>
+								<p><iframe width="640" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-src="http://www.openstreetmap.org/export/embed.html?bbox=4.473830759525299%2C50.47422046442369%2C4.477371275424957%2C50.475966719544715&amp;layer=mapnik" style="border: 1px solid black"></iframe></p>
+								<table>
+									<tr>
+										<td rowspan="2"><img class="plain" data-src="img/icon-twitter.png" /></td>
+										<td>
+											<a href="twitter.com/@CETIC">
+												twitter.com/@CETIC
+												<img class="plain" style="margin: 0 5px" data-src="img/icon-flag-french.png" />
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="https://www.twitter.com/@CETIC_be">
+												twitter.com/@CETIC_be
+												<img class="plain" style="margin: 0px 5px" data-src="img/icon-flag-english.png" />
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img class="plain" data-src="img/icon-linkedin.png" />
+										</td>
+										<td>
+											<a href="https://www.linkedin.com/company/cetic">
+												linkedin.com/company/cetic
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img class="plain" data-src="img/icon-mail.png" />
+										</td>
+										<td>
+											<a href="mailto:info@cetic.be">
+												info@cetic.be
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img class="plain" data-src="img/icon-phone.png" />
+										</td>
+										<td>
+											+32 71 490 700
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td style="text-align: center">
+								<h3>Continuous Integration with OpenSHift and Gitlab CI</h3>
+								<br />
+								<br />
+								<br />
+								<table style="width: 100%">
+									<tr>
+										<td style="text-align: center"><h3>Alexandre Nuttinck</h3></td>
+									</tr>
+									<tr>
+										<td style="text-align: center"><h4>Research Engineer</h4></td>
+									</tr>
+									<tr>
+										<td style="text-align: center">alexandre.nuttinck@cetic.be</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">+32 495 22 66 10</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				slideNumber: true,
+				width: "100%",
+				height: "100%",
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
